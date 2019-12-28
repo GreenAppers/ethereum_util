@@ -7,7 +7,6 @@ import 'package:ethereum_util/src/abi.dart' as ethAbi;
 import 'package:ethereum_util/src/bytes.dart';
 import 'package:ethereum_util/src/signature.dart';
 import 'package:ethereum_util/src/utils.dart';
-import 'package:json_schema/json_schema.dart';
 import 'package:meta/meta.dart';
 import 'package:json_annotation/json_annotation.dart';
 
@@ -252,7 +251,7 @@ class TypedDataUtils {
   }
 }
 
-final JsonSchema TYPED_MESSAGE_SCHEMA = JsonSchema.createSchema(r'''
+/*final JsonSchema TYPED_MESSAGE_SCHEMA = JsonSchema.createSchema(r'''
 {
   "type": "object",
   "properties": {
@@ -274,4 +273,4 @@ final JsonSchema TYPED_MESSAGE_SCHEMA = JsonSchema.createSchema(r'''
   },
   "required": ["types", "primaryType", "domain", "message"]
 }
-''');
+''');*/
